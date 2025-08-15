@@ -98,7 +98,7 @@ end
 count=1;
 if abs(numlevels-exactlevels)>eps
     %We need to zero pad
-    temp=zeros(2^(numlevels+1),1);
+    temp=zeros(2^(numlevels+1),sizer(2));
     count=2^(numlevels+1)-length(data_array)+1;
     temp(count:length(temp),:)=data_array;
     data_array=temp;
